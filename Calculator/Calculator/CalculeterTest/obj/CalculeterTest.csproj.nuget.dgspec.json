@@ -1,0 +1,103 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\CalculeterTest\\CalculeterTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\Calculator\\Calculator.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\Calculator\\Calculator.csproj",
+        "projectName": "Calculator",
+        "projectPath": "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\Calculator\\Calculator.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\CalculeterTest\\CalculeterTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\CalculeterTest\\CalculeterTest.csproj",
+        "projectName": "CalculeterTest",
+        "projectPath": "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\CalculeterTest\\CalculeterTest.csproj",
+        "packagesPath": "C:\\Users\\y.abbas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\CalculeterTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\y.abbas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\Calculator\\Calculator.csproj": {
+                "projectPath": "C:\\Users\\y.abbas\\OneDrive - ONEPOINT\\Documents\\calculeter\\Calculator\\Calculator\\Calculator\\Calculator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

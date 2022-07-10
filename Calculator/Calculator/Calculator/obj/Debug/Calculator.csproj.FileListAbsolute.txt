@@ -1,0 +1,24 @@
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\thaer\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\y.abbas\OneDrive - ONEPOINT\Documents\calculeter\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+C:\Users\y.abbas\OneDrive - ONEPOINT\Documents\calculeter\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\y.abbas\OneDrive - ONEPOINT\Documents\calculeter\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\y.abbas\OneDrive - ONEPOINT\Documents\calculeter\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\y.abbas\OneDrive - ONEPOINT\Documents\calculeter\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\y.abbas\OneDrive - ONEPOINT\Documents\calculeter\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\y.abbas\OneDrive - ONEPOINT\Documents\calculeter\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\y.abbas\OneDrive - ONEPOINT\Documents\calculeter\Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
