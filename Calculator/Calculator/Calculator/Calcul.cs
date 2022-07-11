@@ -25,60 +25,47 @@ namespace Calculator
 
 
         //  Addition 
-      public string[] addition(string[] arr)
+      public double addition(double result, string expression)
         {
+           
          
-               double numLeft = 0.0;
-               double numRight = 0.0;
-               string sign = "";
-               int index = 1;
-                
-
-
-            numLeft = Convert.ToDouble(arr[0]);
-            sign = Convert.ToString(arr[index]);
-            numRight = Convert.ToDouble(arr[index + 1]);
-            index = index + 2;
-            double result = 0;
+            string[] array = expression.Split();
+            double numLeft = Convert.ToDouble(array[0]);
+            string sign = Convert.ToString(array[1]);
+            double numRight = Convert.ToDouble(array[2]);
+           
+             result = 0;
 
             if (sign == "+")
             {
-                Console.Clear();
-                Console.WriteLine();
                 result =  numLeft + numRight;
             }
-
+           
             Console.WriteLine("The result is {0}", result);
-            return arr;
+            return result;
         }
 
         //  Subtraction
-        public string[] subtraction(string[] arr)
+        public double subtraction(double result, string expression)
         {
+          
+           
+            string[] array =  expression.Split(); ;
+     
+            double numLeft = Convert.ToDouble(array[0]);
+            string sign = Convert.ToString(array[1]);
+            double numRight = Convert.ToDouble(array[2]);
 
-
-            double numLeft = 0.0;
-            double numRight = 0.0;
-            string sign = "";
-            int index = 1;
-
-
-
-            numLeft = Convert.ToDouble(arr[0]);
-            sign = Convert.ToString(arr[index]);
-            numRight = Convert.ToDouble(arr[index + 1]);
-            index = index + 2;
-            double result = 0;
+            result = 0;
 
             if (sign == "-")
             {
-                Console.Clear();
-                Console.WriteLine();
+          
                 result = numLeft - numRight;
             }
 
             Console.WriteLine("The result is {0}", result);
-            return arr;
+            return result;
         }
 
 
@@ -147,16 +134,28 @@ namespace Calculator
             double num1 = 0;
             double num2 = 0;
             double result = 0;
+            string expression= "";
+                
 
 
 
-                if (action != 1 && action != 2)
+                if (action == 1)
+                {
+                    Console.WriteLine("Write an expression with two numbers and an operator with space in between, for example, 4 + 2");
+                    expression = Convert.ToString(Console.ReadLine());
+
+                }
+                else if (action == 2)
+                {
+                    Console.WriteLine("Write an expression with two numbers and an operator with space in between, for example, 4 - 2");
+                    expression = Convert.ToString(Console.ReadLine());
+                }
+                else
                 {
                     Console.WriteLine("Enter 1st num");
                     num1 = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Enter 2nd num");
                     num2 = Convert.ToDouble(Console.ReadLine());
-
                 }
               
       
@@ -165,32 +164,17 @@ namespace Calculator
 
                     case 1:
                         {
-
-                            Console.WriteLine("Write an expression with two numbers and an operator with space in between, for example, 4 + 2");
-                            string expression;
-                            string[] array;
-                            string[] array1;
-                            expression = Console.ReadLine();
-                            array = expression.Split();
-                            array1 = calcul.addition(array);
-                           
-                            
+                          
+                            calcul.addition(result, expression);
+                                                   
                             break;
 
                         }
 
                     case 2:
                         {
-                            Console.WriteLine("Write an expression with two numbers and an operator with space in between, for example, 4 - 2");
-                            string expression;
-                            string[] array;
-                            string[] array1;
-                            expression = Console.ReadLine();
-                            array = expression.Split();
-                            array1 = calcul.subtraction(array);
-
-
-
+                            calcul.subtraction(result, expression);
+                         
                             break;
 
                         }
