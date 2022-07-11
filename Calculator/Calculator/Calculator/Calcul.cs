@@ -22,13 +22,10 @@ namespace Calculator
         }
 
 
-
-
         //  Addition 
       public double addition(double result, string expression)
         {
            
-         
             string[] array = expression.Split();
             double numLeft = Convert.ToDouble(array[0]);
             string sign = Convert.ToString(array[1]);
@@ -48,10 +45,8 @@ namespace Calculator
         //  Subtraction
         public double subtraction(double result, string expression)
         {
-          
            
             string[] array =  expression.Split(); ;
-     
             double numLeft = Convert.ToDouble(array[0]);
             string sign = Convert.ToString(array[1]);
             double numRight = Convert.ToDouble(array[2]);
@@ -83,11 +78,8 @@ namespace Calculator
     public double division(double num1, double num2, double result)
     {
 
-
         try
         {
-
-
             result = num1 / num2;
             if (num1 == 0 || num2 == 0)
             {
@@ -97,10 +89,10 @@ namespace Calculator
 
             else
             {
-                Console.WriteLine(num1 / num2);
+                Console.WriteLine("The result is {0}", num1 / num2);
+                    
 
-
-            }
+                }
         }
         catch (Exception ex)
         {
@@ -123,21 +115,14 @@ namespace Calculator
             {
             calcul.info();
 
-
-
-                int action = Convert.ToInt32(Console.ReadLine());
-         
-
-
-
+           int action = Convert.ToInt32(Console.ReadLine());
+        
 
             double num1 = 0;
             double num2 = 0;
             double result = 0;
             string expression= "";
                 
-
-
 
                 if (action == 1)
                 {
@@ -150,7 +135,14 @@ namespace Calculator
                     Console.WriteLine("Write an expression with two numbers and an operator with space in between, for example, 4 - 2");
                     expression = Convert.ToString(Console.ReadLine());
                 }
-                else
+
+                else if (action != 1 && action != 2 && action != 3 && action != 4)
+                {
+                    Console.WriteLine("Wrong action!! try again");
+
+                }
+
+                else 
                 {
                     Console.WriteLine("Enter 1st num");
                     num1 = Convert.ToDouble(Console.ReadLine());
@@ -164,42 +156,34 @@ namespace Calculator
 
                     case 1:
                         {
-                          
-                            calcul.addition(result, expression);
-                                                   
+                  
+                            calcul.addition(result, expression);                 
                             break;
 
                         }
 
                     case 2:
                         {
-                            calcul.subtraction(result, expression);
-                         
+                            calcul.subtraction(result, expression);       
                             break;
 
                         }
 
                     case 3:
                         {
-                        calcul.multiplication(num1, num2, result);
 
+                        calcul.multiplication(num1, num2, result);
                             break;
 
                         }
 
                     case 4:
                         {
-                        calcul.division(num1, num2, result);
 
+                        calcul.division(num1, num2, result);
                             break;
 
                         }
-
-                    default:
-                        Console.WriteLine("Wrong action!! try again");
-
-                        break;
-
                 }
 
 
