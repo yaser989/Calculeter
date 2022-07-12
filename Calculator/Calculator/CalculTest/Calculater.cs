@@ -22,6 +22,21 @@ namespace CalculTest
             Assert.Equal(4, calcul.addition(num1, num2, result));
 
         }
+
+
+        [Fact]
+        public void addition_cas2()
+        {
+            calcul = new Calculator.Calcul();
+
+            double[] num1 = {2,2,2,2};
+            double result = 0;
+
+            Assert.Equal(8, calcul.addition(num1, result));
+
+        }
+
+
         [Fact]
         public void subtraction_cas1()
         {
@@ -34,6 +49,20 @@ namespace CalculTest
 
             Assert.Equal(2, calcul.subtraction(num1, num2, result));
         }
+
+        [Fact]
+        public void subtraction_cas2()
+        {
+
+            calcul = new Calculator.Calcul();
+
+            double [] num1 = {15,5,2,2};
+            double result = 0;
+
+            Assert.Equal(6, calcul.subtraction(num1, result));
+        }
+
+
         [Fact]
         public void multiplication()
         {
