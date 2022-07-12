@@ -16,56 +16,78 @@ namespace Calculator
             Console.WriteLine("Enter the action to be performed");
             Console.WriteLine("Press 1 for Addition");
             Console.WriteLine("Press 2 for Subtraction");
-            Console.WriteLine("Press 3 for Multiplication");
-            Console.WriteLine("Press 4 for Division \n");
+            Console.WriteLine("Press 3 for Array Addition");
+            Console.WriteLine("Press 4 for Array Subtraction");
+            Console.WriteLine("Press 5 for Multiplication");
+            Console.WriteLine("Press 6 for Division \n");
 
         }
 
 
         //  Addition 
-      public double addition(double result, string expression)
+        public double addition(double num1, double num2, double result)
         {
-           
-            string[] array = expression.Split();
-            double numLeft = Convert.ToDouble(array[0]);
-            string sign = Convert.ToString(array[1]);
-            double numRight = Convert.ToDouble(array[2]);
-           
-             result = 0;
+            result = num1 + num2;
+            Console.WriteLine("The result is {0}", result);
+            return result;
+        }
 
-            if (sign == "+")
+
+
+
+      public double addition(double [] input, double result)
+        {
+            result = 0;
+
+            foreach (double i in input)
             {
-                result =  numLeft + numRight;
+                result += i;
             }
+           
            
             Console.WriteLine("The result is {0}", result);
             return result;
         }
 
         //  Subtraction
-        public double subtraction(double result, string expression)
+        public double subtraction(double num1, double num2, double result)
         {
-           
-            string[] array =  expression.Split(); ;
-            double numLeft = Convert.ToDouble(array[0]);
-            string sign = Convert.ToString(array[1]);
-            double numRight = Convert.ToDouble(array[2]);
-
-            result = 0;
-
-            if (sign == "-")
-            {
-          
-                result = numLeft - numRight;
-            }
-
+            result = num1 - num2;
             Console.WriteLine("The result is {0}", result);
             return result;
         }
 
 
-  //  Multiplication
-    public double multiplication(double num1, double num2, double result)
+
+
+        public double subtraction(double[] input, double result)
+        {
+            result = 0;
+
+            foreach (double i in input)
+            {
+               
+                if(i > result)
+                {
+                    result = i;
+                }
+                else
+                {
+                    result -= i;
+                }
+
+                  
+            
+               
+            }
+
+
+            Console.WriteLine("The result is {0}", result);
+            return result;
+        }
+
+        //  Multiplication
+        public double multiplication(double num1, double num2, double result)
     {
 
         result = num1 * num2;
@@ -121,55 +143,74 @@ namespace Calculator
             double num1 = 0;
             double num2 = 0;
             double result = 0;
-            string expression= "";
-                
 
-                if (action == 1)
+             double[] input = new double[4];
+
+              
+
+                if (action == 3 || action == 4 )
                 {
-                    Console.WriteLine("Write an expression with two numbers and an operator with space in between, for example, 4 + 2");
-                    expression = Convert.ToString(Console.ReadLine());
+                    for (int i = 0; i < input.Length; i++)
+                    {
+                        input[i] = Convert.ToInt32(Console.ReadLine());
+                    }
+
 
                 }
-                else if (action == 2)
+                else if (action > 6)
                 {
-                    Console.WriteLine("Write an expression with two numbers and an operator with space in between, for example, 4 - 2");
-                    expression = Convert.ToString(Console.ReadLine());
+                     Console.WriteLine("Wrong action!! try again");
                 }
-
-                else if (action != 1 && action != 2 && action != 3 && action != 4)
-                {
-                    Console.WriteLine("Wrong action!! try again");
-
-                }
-
-                else 
+                else
                 {
                     Console.WriteLine("Enter 1st num");
                     num1 = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Enter 2nd num");
                     num2 = Convert.ToDouble(Console.ReadLine());
+                   
+
                 }
-              
-      
+
+
+
+
                 switch (action)
                 {
 
                     case 1:
                         {
                   
-                            calcul.addition(result, expression);                 
+                            
+                            calcul.addition(num1,  num2,  result);
+                           
                             break;
 
                         }
 
                     case 2:
                         {
-                            calcul.subtraction(result, expression);       
+                            calcul.subtraction(num1, num2, result);       
+                            break;
+
+                        }
+                    case 3:
+                        {
+
+
+                            calcul.addition(input, result);
+
                             break;
 
                         }
 
-                    case 3:
+                    case 4:
+                        {
+                            calcul.subtraction(input, result);
+                            break;
+
+                        }
+
+                    case 5:
                         {
 
                         calcul.multiplication(num1, num2, result);
@@ -177,7 +218,7 @@ namespace Calculator
 
                         }
 
-                    case 4:
+                    case 6:
                         {
 
                         calcul.division(num1, num2, result);
